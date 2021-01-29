@@ -1,0 +1,9 @@
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 80% auto;
+}
+
+main>p {
+  background-color: chocolate;
+}

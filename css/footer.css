@@ -1,0 +1,11 @@
+footer {
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a:visited {
+  color: antiquewhite;
+  text-decoration: none;
+}
