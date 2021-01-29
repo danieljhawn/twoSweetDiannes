@@ -33,26 +33,24 @@ body {
   padding: 3rem; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Cedarville Cursive", cursive;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
   color: antiquewhite; }
 
 .heading-primary {
-  color: #fff;
+  color: antiquewhite;
   text-transform: uppercase;
   /* prevents "shake" from happening with animation */
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
+    font-family: "Cedarville Cursive", cursive;
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 4s;
-    animation-timing-function: ease-out;
     /* animation-delay: ;
         animation-timing-function: ;
         animation-iteration-count: ; */ }
@@ -64,6 +62,7 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 700;
+    font-family: "Hachi Maru Pop", cursive;
     letter-spacing: 1.75rem;
     animation: moveInRight 4.3s ease-out; }
     @media (max-width: 37.5em) {
