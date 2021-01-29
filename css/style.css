@@ -1,20 +1,20 @@
 header {
-  background-color: aquamarine;
+  background-color: green;
   display: grid;
   place-items: center; }
 
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: auto 80% auto; }
+  grid-template-rows: 20% auto 10%; }
 
-main > p {
-  background-color: chocolate; }
+main {
+  background-color: white; }
 
 footer {
   background-color: pink;
   display: flex; }
 
-a:visited ink {
+a:visited {
   color: antiquewhite;
   text-decoration: none; }
