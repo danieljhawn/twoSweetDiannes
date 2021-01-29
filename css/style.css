@@ -1,12 +1,13 @@
-header {
-  background-color: lightseagreen;
-  display: grid;
-  place-items: center; }
+/*breakpoint argument choices:
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
 
-img {
-  height: 100%;
-  width: auto; }
+    ORDER: Base + Typography > general layout + grid > page layout > components
 
+    1em = 16px    em is universally accepted as the best measurement for media Q's
+*/
 body {
   height: 100vh;
   display: grid;
@@ -14,9 +15,36 @@ body {
   margin: 0;
   padding: 0; }
 
-main {
-  background-color: white;
-  padding: 1rem; }
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+header {
+  background-color: lightseagreen;
+  display: flex;
+  place-items: center;
+  height: 8vh; }
 
 footer {
   background-color: pink; }
