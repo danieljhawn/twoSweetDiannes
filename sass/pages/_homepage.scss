@@ -1,48 +1,42 @@
 //About section
 
 .section-about {
-    background-color: $color-secondary-light;
-    padding: 25rem 0;
-    margin-top: -20vh;
+  color: $color-white;
+  background-color: $color-secondary-light;
+  padding: 25rem 0;
+  margin-top: -20vh;
 }
 
 .about-row {
-    height: 75vh;
+  margin: 0 10rem;
 }
 
 .about-picture {
-position: relative;
+  position: relative;
+  width: 70rem;
 
-
-width: 65rem;
-
-    &__img{
-
-        height: 45rem;
-        width: 45rem;
-        @include absCenter;
-    }
+  &__img {
+    height: 40rem;
+    width: 40rem;
+    @include absCenter;
+  }
 }
 
 .about-text {
+  font-size: 2.5rem;
+  width: 70rem;
 
-    font-size: 3rem;
-    width: 65rem;
+  &__header {
+    margin-bottom: 3rem;
+    border-bottom: solid 1px $color-primary;
+  }
 
-    &__header {
+  &__divider {
+  }
 
-    }
+  &__paragraph {
+  }
 
-    &__divider {
-
-    }
-
-    &__paragraph {
-
-    }
-
-    &__button {
-
-    }
+  &__button {
+  }
 }
-
