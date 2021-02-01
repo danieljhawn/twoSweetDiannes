@@ -1,12 +1,12 @@
 // Color variables
 
-$color-primary: lightseagreen;
+$color-primary: #00bfb2;
 $color-primary-light: rgb(46, 235, 225);
 $color-primary-dark: rgb(26, 153, 147);
 
-$color-secondary: pink;
-$color-secondary-light:  rgb(240, 217, 221);
-$color-secondary-dark: rgb(209, 140, 151);
+$color-secondary: #457b9d;
+$color-secondary-light:#88dadc;
+$color-secondary-dark: #1d3557;
 
 $color-tertiary: antiquewhite;
 $color-tertiary-light: rgb(240, 229, 216);
@@ -28,6 +28,7 @@ $default-font-size: 1.6rem;
 
 //Fonts
 
-$font-cursive: 'Cedarville Cursive', cursive;
-$font-hachi: 'Hachi Maru Pop', cursive;
-$font-yusei: 'Yusei Magic', sans-serif;
+$font-cursive: "babydarling", cursive;
+$font-serif: 'Prata', serif;
+// $font-serif: "Playfair Display", serif;
+$font-sans-serif: "Work Sans", serif;

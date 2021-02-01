@@ -1,16 +1,18 @@
 footer {
   background-color: $color-secondary;
+  // height: 
 }
 
 a {
   color: $color-tertiary;
   text-decoration: none;
+  font-size: 3rem;
 }
 
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
   flex-wrap: nowrap;
 }
