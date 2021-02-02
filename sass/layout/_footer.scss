@@ -1,22 +1,21 @@
 footer {
   background-color: $color-secondary;
-  // height: 
-}
+  // height:
+  a {
+    color: $color-tertiary;
+    text-decoration: none;
+    font-size: 3rem;
+  }
 
-a {
-  color: $color-tertiary;
-  text-decoration: none;
-  font-size: 3rem;
-}
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: nowrap;
+  }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style: none;
-  flex-wrap: nowrap;
-}
-
-li {
-  margin: 1rem;
+  li {
+    margin: 1rem;
+  }
 }
