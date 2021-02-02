@@ -97,21 +97,18 @@ body {
 
 footer {
   background-color: #457b9d; }
-
-a {
-  color: antiquewhite;
-  text-decoration: none;
-  font-size: 3rem; }
-
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style: none;
-  flex-wrap: nowrap; }
-
-li {
-  margin: 1rem; }
+  footer a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 3rem; }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: nowrap; }
+  footer li {
+    margin: 1rem; }
 
 /* Button styling */
 .btn, .btn:link, .btn:visited {
@@ -216,3 +213,22 @@ li {
   .about-text__header {
     margin-bottom: 3rem;
     border-bottom: solid 1px #00bfb2; }
+
+.section-samples {
+  background-color: #1d3557;
+  color: #fff;
+  padding: 15rem 0;
+  display: flex;
+  justify-content: center; }
+  .section-samples ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap; }
+  .section-samples li {
+    margin: 1rem;
+    justify-content: space-evenly;
+    box-shadow: #fff; }
+  .section-samples img {
+    max-height: 500px; }
