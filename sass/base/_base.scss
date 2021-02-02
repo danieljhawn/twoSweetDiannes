@@ -38,3 +38,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.container {
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
