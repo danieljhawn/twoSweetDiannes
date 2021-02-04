@@ -102,6 +102,8 @@ body {
     text-align: center; }
 
 footer {
+  position: sticky;
+  bottom: 0;
   background-color: #457b9d; }
   footer a {
     color: antiquewhite;
@@ -228,9 +230,9 @@ footer {
     justify-content: center;
     list-style: none;
     flex-wrap: wrap; }
-  .section-samples li {
-    margin: 1rem;
-    box-shadow: #fff; }
+    .section-samples ul li {
+      margin: 1rem;
+      box-shadow: #fff; }
   .section-samples img {
     max-height: 40rem; }
 
@@ -267,3 +269,32 @@ footer {
   .section-contact button[type="submit"] {
     width: 100%;
     height: 5rem; }
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(46, 235, 225, 0.8), rgba(26, 153, 147, 0.8)), url(/img/cookie-houses.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header2__logo-box-center {
+    position: relative;
+    top: 4rem; }
+
+.payment {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 30%;
+  background-color: #1d3557;
+  padding: 3rem;
+  font-size: 2rem;
+  font-family: "Work Sans", serif; }
+  .payment ul {
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%; }
+    .payment ul li {
+      margin: 2rem;
+      text-align: center; }

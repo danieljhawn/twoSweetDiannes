@@ -1,0 +1,44 @@
+.header2 {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(/img/cookie-houses.jpg);
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__logo-box-center {
+    position: relative;
+    top: 4rem;
+  }
+  
+}
+
+.payment {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 30%;
+  background-color: $color-secondary-dark;
+  padding: 3rem;
+  font-size: 2rem;
+  font-family: $font-sans-serif;
+
+  ul {
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li {
+      margin: 2rem;
+      text-align: center;
+      
+    }
+  }
+}

@@ -21,7 +21,7 @@
 @font-face {
   font-family: 'Work Sans';
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
   src: url('../fonts/work-sans-v9-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/work-sans-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
