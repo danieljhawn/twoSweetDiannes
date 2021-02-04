@@ -288,17 +288,13 @@ footer {
   right: 25%;
   top: 30%;
   background-color: #1d3557;
-  padding: 4rem;
+  padding: 3rem;
   font-size: 2rem;
-  font-family: "Work Sans", serif;
-  font-weight: 100; }
+  font-family: "Work Sans", serif; }
   .payment ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     list-style: none;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    width: 100%; }
     .payment ul li {
-      margin: 1rem;
-      box-shadow: #fff;
-      text-decoration: none; }
+      margin: 2rem;
+      text-align: center; }
