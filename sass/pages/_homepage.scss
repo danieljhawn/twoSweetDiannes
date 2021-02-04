@@ -51,13 +51,15 @@
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    
+    li {
+      margin: 1rem;
+      // justify-content: space-around;
+      box-shadow: $color-white;
+    }
+  
   }
 
-  li {
-    margin: 1rem;
-    // justify-content: space-around;
-    box-shadow: $color-white;
-  }
 
   img {
     max-height: 40rem;
