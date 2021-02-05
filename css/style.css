@@ -283,6 +283,8 @@ footer {
     top: 4rem; }
 
 .payment {
+  text-decoration: none;
+  color: white;
   position: absolute;
   left: 25%;
   right: 25%;
@@ -290,7 +292,8 @@ footer {
   background-color: #1d3557;
   padding: 3rem;
   font-size: 2rem;
-  font-family: "Work Sans", serif; }
+  font-family: "Work Sans", serif;
+  border-radius: 2rem; }
   .payment ul {
     list-style: none;
     flex-wrap: wrap;
@@ -298,3 +301,9 @@ footer {
     .payment ul li {
       margin: 2rem;
       text-align: center; }
+      .payment ul li a {
+        text-decoration: none;
+        color: #2eebe1;
+        font-size: 5rem; }
+        .payment ul li a:hover {
+          color: #fff; }

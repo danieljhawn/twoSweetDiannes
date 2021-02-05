@@ -21,6 +21,8 @@
 }
 
 .payment {
+  text-decoration: none;
+  color: white;
   position: absolute;
   left: 25%;
   right: 25%;
@@ -29,6 +31,8 @@
   padding: 3rem;
   font-size: 2rem;
   font-family: $font-sans-serif;
+  border-radius: 2rem;
+  // box-shadow: 1rem 1rem 2rem $color-black;
 
   ul {
     list-style: none;
@@ -39,6 +43,14 @@
       margin: 2rem;
       text-align: center;
       
+      a {
+        text-decoration: none;
+        color: $color-primary-light;
+        font-size: 5rem;
+        &:hover {
+          color: $color-white;
+        }
+      }
     }
   }
 }
