@@ -292,7 +292,8 @@ footer {
   background-color: #1d3557;
   padding: 3rem;
   font-size: 2rem;
-  font-family: "Work Sans", serif; }
+  font-family: "Work Sans", serif;
+  border-radius: 2rem; }
   .payment ul {
     list-style: none;
     flex-wrap: wrap;
