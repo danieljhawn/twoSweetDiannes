@@ -104,19 +104,25 @@ body {
 footer {
   position: sticky;
   bottom: 0;
-  background-color: #457b9d; }
+  background-color: #457b9d;
+  min-height: 20px; }
   footer a {
     color: antiquewhite;
     text-decoration: none;
-    font-size: 3rem; }
+    font-size: 3rem;
+    display: inline-block; }
+    footer a img {
+      display: block; }
   footer ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style: none;
     flex-wrap: nowrap; }
   footer li {
-    margin: 1rem; }
+    margin: 2rem; }
+    footer li img {
+      height: 3rem; }
 
 /* Button styling */
 .btn, .btn:link, .btn:visited {
@@ -304,6 +310,7 @@ footer {
       .payment ul li a {
         text-decoration: none;
         color: #2eebe1;
-        font-size: 5rem; }
+        font-size: 5rem;
+        min-height: 15px; }
         .payment ul li a:hover {
           color: #fff; }
