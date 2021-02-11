@@ -20,9 +20,9 @@ body {
     font-size: 10rem;
     font-weight: 400;
     // letter-spacing: .4rem;
-    // animation-name: moveInLeft;
-    // animation-duration: 4s;
-    // animation-timing-function: ease-out;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
 
     @include respond(phone) {
       letter-spacing: 1rem;
@@ -40,7 +40,7 @@ body {
     font-weight: 400;
     font-family: $font-serif;
     letter-spacing: 0.2rem;
-    // animation: moveInRight 4.3s ease-out;
+    animation: moveInRight 4.3s ease-out;
 
     @include respond(phone) {
       letter-spacing: 0.5rem;

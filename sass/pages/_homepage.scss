@@ -5,6 +5,18 @@
   background-color: $color-secondary-light;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+  transform: skewY(-7deg);
+
+  margin-top: -10rem;
+
+  //Select all First direct children
+  & > * {
+    transform: skewY(7deg);
+}
 }
 
 .about-picture {
@@ -40,9 +52,10 @@
 .section-samples {
   background-color: $color-secondary-dark;
   color: $color-white;
-  padding: 15rem 0;
+  padding: 45rem 0;
   display: flex;
   justify-content: center;
+  margin-top: -20vh;
 
   // this is the div containing the sample pics
   ul {
