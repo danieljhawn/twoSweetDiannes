@@ -8,6 +8,48 @@
 
     1em = 16px    em is universally accepted as the best measurement for media Q's
 */
+/* Animations */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  /* 60% {
+        transform: rotate(120deg);
+    } */
+  /* 80% {
+        transform: translateX(20px);
+    } */
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  /* 80% {
+        transform: translateX(-20px);
+    } */
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 /* Global variables */
 *,
 *::after,
@@ -62,6 +104,9 @@ body {
     display: block;
     font-size: 10rem;
     font-weight: 400;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
     /* animation-delay: ;
         animation-timing-function: ;
         animation-iteration-count: ; */ }
@@ -74,18 +119,19 @@ body {
     font-size: 2.7rem;
     font-weight: 400;
     font-family: "Prata", serif;
-    letter-spacing: 0.2rem; }
+    letter-spacing: 0.2rem;
+    animation: moveInRight 4.3s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
 
 .header {
-  height: 95vh;
+  height: 105vh;
   background-image: linear-gradient(to right bottom, rgba(46, 235, 225, 0.8), rgba(26, 153, 147, 0.8)), url(/img/cookie-houses.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
   position: relative; }
   .header__logo-box {
     position: absolute;
@@ -205,7 +251,11 @@ footer {
   color: #fff;
   background-color: #88dadc;
   padding: 25rem 0;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  transform: skewY(-7deg);
+  margin-top: -10rem; }
+  .section-about > * {
+    transform: skewY(7deg); }
 
 .about-picture {
   position: relative;
@@ -227,9 +277,10 @@ footer {
 .section-samples {
   background-color: #1d3557;
   color: #fff;
-  padding: 15rem 0;
+  padding: 45rem 0;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: -20vh; }
   .section-samples ul {
     display: flex;
     flex-direction: row;
@@ -256,7 +307,7 @@ footer {
     padding: 5rem 0 5rem 0; }
   .section-contact .text-fields {
     display: grid;
-    grid-template-areas: "name email" "subject phone" "message message";
+    grid-template-areas: "name email" "subject phone" "message message";
     grid-gap: 2rem; }
     .section-contact .text-fields .name-input {
       grid-area: name; }
