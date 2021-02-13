@@ -24,33 +24,38 @@
       <form action="app.js">
         <h1>What kind of cookies would you like?</h1>
         <div>
-          <input type="radio" id="catalog" name="custom" value="catalog" checked>
+          <input type="radio" id="catalog" name="custom" value="catalog" class="radio-selectors">
           <label for="catalog">I want to pick something from the catalog</label>
           <br>
-          <input type="radio" id="custom" name="custom" value="custom">
-          <label for="custom">I want a cutom order</label>
+          <input type="radio" id="custom" name="custom" value="custom" class="radio-selectors">
+          <label for="custom">I want a custom order</label>
         </div><br>
-        <label for="occasion">What's the occasion?</label><br>
-        <div>
+        <div class="occasion" style="display: none;">
+          <label for="occasion">What's the occasion?</label>
           <select name="occasion" id="occasion-select">
             <option value="">--Please choose an option--</option>
-            <option value="Birthday">Birthday</option>
-            <option value="Graduation">Graduation</option>
-            <option value="Anniversary">Anniversary</option>
-            <option value="New Years">New Years</option>
-            <option value="Valentine's Day">Valentine's Day</option>
-            <option value="Easter">Easter</option>
-            <option value="4th of July">4th of July</option>
-            <option value="Thanksgiving">Thanksgiving</option>
-            <option value="Christmas">Christmas</option>
-            <option value="Hanukkah">Hanukkah</option>
+            <option value="other">Other</option>
+            <option value="birthday">Birthday</option>
+            <option value="G=graduation">Graduation</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="new years">New Years</option>
+            <option value="v-dayay">Valentine's Day</option>
+            <option value="easter">Easter</option>
+            <option value="july4th">4th of July</option>
+            <option value="thanksgiving">Thanksgiving</option>
+            <option value="christmas">Christmas</option>
+            <option value="hanukkah">Hanukkah</option>
           </select>
-          <br>
-          <select name="cookie-shape" id="shape">
+        </div>
+        <br>
+        <div class="cookie-options" style="display: none;">
+          <label for="cookie-options">Cookie Options</label>
+          <select name="cookie-options" id="cookie-options-select">
             <option value="">--Please choose an option--</option>
             <option value="circular">Circular</option>
             <option value="custom">Custom Shape</option>
           </select>
+        </div>
         </div>
         <button type="button" id="button">BIG OL BUTTON</button>
       </form>
