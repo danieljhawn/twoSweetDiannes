@@ -1,6 +1,3 @@
-require('dotenv').config()
-console.log("connected to" + process.env.SMTP_SERVER)
-
 
 "use strict";
 const nodemailer = require("nodemailer");
