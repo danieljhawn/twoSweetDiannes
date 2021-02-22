@@ -307,7 +307,7 @@ footer {
     padding: 5rem 0 5rem 0; }
   .section-contact .text-fields {
     display: grid;
-    grid-template-areas: "name email" "subject phone" "message message";
+    grid-template-areas: "name email" "subject phone" "message message";
     grid-gap: 2rem; }
     .section-contact .text-fields .name-input {
       grid-area: name; }
@@ -370,3 +370,7 @@ footer {
         min-height: 15px; }
         .payment ul li a:hover {
           color: #fff; }
+
+.payment {
+  display: flex;
+  flex-direction: row; }
