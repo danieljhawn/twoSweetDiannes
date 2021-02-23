@@ -1,0 +1,6 @@
+POST http://localhost:587/send-email
+
+{
+  "first_name": "Test",
+  "last_name": "Testes"
+}

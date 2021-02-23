@@ -21,13 +21,13 @@
 
   <main>
     <section class="payment">
-      <form action="app.js">
+      <form action="/send-email" method="POST">
         <h1>What kind of cookies would you like?</h1>
         <div>
-          <input type="radio" id="catalog" name="custom" value="catalog" class="radio-selectors">
+          <input type="radio" id="catalog" name="custom" class="radio-selectors">
           <label for="catalog">I want to pick something from the catalog</label>
           <br>
-          <input type="radio" id="custom" name="custom" value="custom" class="radio-selectors">
+          <input type="radio" id="custom" name="custom" class="radio-selectors">
           <label for="custom">I want a custom order</label>
         </div><br>
         <div class="occasion" style="display: none;">
@@ -54,10 +54,11 @@
             <option value="">--Please choose an option--</option>
             <option value="circular">Circular</option>
             <option value="custom">Custom Shape</option>
-          </select>
+          </select><br>
+          <textarea name="cust-details" id="cust-details" cols="30" rows="10"></textarea>
         </div>
         </div>
-        <button type="button" id="button">BIG OL BUTTON</button>
+        <button type="submit" id="button">BIG OL BUTTON</button>
       </form>
     </section>
   </main>
@@ -71,6 +72,31 @@
     </ul>
   </footer>
   <script src="../scripts/estimator.js"></script>
+  <script>
+    const form = document.getElementById('form');
+
+    $('form').on('submit', (e) => {
+      // e.preventDefault();
+
+      // const name = $('#name').val().trim();
+      // const email = $('#from-email').val().trim();
+      // const subject = $('#subject').val().trim();
+      const text = $('#text').val().trim();
+
+      const data = {
+        name,
+        email,
+        subject,
+        text
+      };
+
+      $.post('/email', data, function () {
+        console.log('Server recieved our data');
+      });
+    });
+    // document.getElementById('#form-data').reset();
+  </script>
+
 </body>
 
 </html>

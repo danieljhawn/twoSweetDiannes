@@ -1,5 +1,26 @@
 "use strict";
+require('dotenv').config()
 const nodemailer = require("nodemailer");
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+const route = express.Router();
+const port = process.env.PORT || 5000;
+
+app.use('/', route);
+app.listen(port, () => {
+  console.log('Server listening on port ' + port)
+})
+
+app.post('/send-email', function (req, res) {
+  // Grab the form data and send email
+  console.log(req.body);
+  res.status(201).send(req.body);
+});
 
 function sendEmail() {
   // async..await is not allowed in global scope, must use a wrapper
@@ -38,3 +59,4 @@ function sendEmail() {
 
   main().catch(console.error);
 };
+sendEmail();
