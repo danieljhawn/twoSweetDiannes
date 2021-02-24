@@ -74,7 +74,7 @@
   <script src="../scripts/estimator.js"></script>
   <script>
     const form = document.getElementById('form');
-    
+
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const customSelector = document.querySelector('input[name="cust-or-cat"]:checked').value;
@@ -82,24 +82,27 @@
       const cookieOptions = document.querySelector('#cookie-options-select').value;
       const customCookieDetails = document.querySelector('#cust-details').value;
 
-      console.log(customSelector, occasionSelector, cookieOptions, customCookieDetails);
-      // const name = $('#name').val().trim();
-      // const email = $('#from-email').val().trim();
-      // const subject = $('#subject').val().trim();
-      // const text = $('#text').val().trim();
+      // console.log(customSelector, occasionSelector, cookieOptions, customCookieDetails);
 
       const data = {
-        customSelector,
-        occasionSelector,
-        cookieOptions,
-        customCookieDetails
+        "customSelector": customSelector,
+        "occasionSelector": occasionSelector,
+        "cookieOptions": cookieOptions,
+        "customCookieDetails": customCookieDetails
       };
-      console.log(data);
-      // $.post('/email', data, function () {
-      //   console.log('Server recieved our data');
-      // });
+
+      console.log("here is your" + JSON.stringify(data))
+
+      fetch("/send-email", {
+        method: "POST",
+        body: JSON.stringify(data),
+        // headers: { 'Content-Type': 'application/json' }
+      }).then(res => {
+        console.log(data)
+        console.log("Here's your response:", res);
+      });
+
     });
-    // document.getElementById('#form-data').reset();
   </script>
 
 </body>
