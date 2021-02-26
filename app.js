@@ -1,11 +1,18 @@
 "use strict";
 require('dotenv').config()
 const nodemailer = require("nodemailer");
+const exphbs = require('express-handlebars');
 const express = require("express");
+// const path = require('path');
 const app = express();
 const route = express.Router();
 const port = 5000;
 
+// View engine setup
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
+
+// middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/', route);
@@ -14,9 +21,13 @@ app.listen(port, () => {
   console.log('Server listening on port ' + port)
 })
 
+app.get('/', (req, res) => {
+  res.render('contact');
+});
+
 app.post('/send-email', function (req, res) {
   // Grab the form data and send email
-  res.send();
+  res.json().send();
   console.log(req.body);
 });
 
