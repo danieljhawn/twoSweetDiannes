@@ -126,7 +126,7 @@ body {
         letter-spacing: 0.5rem; } }
 
 .header {
-  height: 105vh;
+  height: 110vh;
   background-image: linear-gradient(to right bottom, rgba(46, 235, 225, 0.8), rgba(26, 153, 147, 0.8)), url(/img/cookie-houses.jpg);
   background-size: cover;
   background-position: top;
@@ -148,7 +148,6 @@ body {
     text-align: center; }
 
 footer {
-  position: sticky;
   bottom: 0;
   background-color: #457b9d;
   min-height: 20px; }
@@ -277,7 +276,7 @@ footer {
 .section-samples {
   background-color: #1d3557;
   color: #fff;
-  padding: 45rem 0;
+  padding: 35rem 0rem 20rem 0rem;
   display: flex;
   justify-content: center;
   margin-top: -20vh; }
@@ -294,10 +293,10 @@ footer {
     max-height: 40rem; }
 
 .section-contact {
-  background-color: #00bfb2; }
+  background-color: #00bfb2;
+  padding: 5rem 0; }
   .section-contact h2 {
     text-align: center;
-    padding-top: 5rem;
     font-size: 3.5rem;
     width: auto; }
   .section-contact img {
@@ -307,7 +306,7 @@ footer {
     padding: 5rem 0 5rem 0; }
   .section-contact .text-fields {
     display: grid;
-    grid-template-areas: "name email" "subject phone" "message message";
+    grid-template-areas: "name email" "subject phone" "message message";
     grid-gap: 2rem; }
     .section-contact .text-fields .name-input {
       grid-area: name; }
@@ -370,7 +369,3 @@ footer {
         min-height: 15px; }
         .payment ul li a:hover {
           color: #fff; }
-
-.payment {
-  display: flex;
-  flex-direction: row; }
