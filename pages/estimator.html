@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>Two Sweet Diannes</title>
+
+</head>
+
+<body>
+  <header class="header2">
+    <div class="header2__logo-box-center">
+      <img src="/img/logo.jpg" alt="Logo" class="header__logo">
+    </div>
+  </header>
+
+  <main>
+    <section class="payment">
+      <form action="app.js">
+        <h1>What kind of cookies would you like?</h1>
+        <div>
+          <input type="radio" id="catalog" name="custom" value="catalog" class="radio-selectors">
+          <label for="catalog">I want to pick something from the catalog</label>
+          <br>
+          <input type="radio" id="custom" name="custom" value="custom" class="radio-selectors">
+          <label for="custom">I want a custom order</label>
+        </div><br>
+        <div class="occasion" style="display: none;">
+          <label for="occasion">What's the occasion?</label>
+          <select name="occasion" id="occasion-select">
+            <option value="">--Please choose an option--</option>
+            <option value="other">Other</option>
+            <option value="birthday">Birthday</option>
+            <option value="graduation">Graduation</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="new years">New Years</option>
+            <option value="v-dayay">Valentine's Day</option>
+            <option value="easter">Easter</option>
+            <option value="july4th">4th of July</option>
+            <option value="thanksgiving">Thanksgiving</option>
+            <option value="christmas">Christmas</option>
+            <option value="hanukkah">Hanukkah</option>
+          </select>
+        </div>
+        <br>
+        <div class="cookie-options" style="display: none;">
+          <label for="cookie-options">Cookie Options</label>
+          <select name="cookie-options" id="cookie-options-select">
+            <option value="">--Please choose an option--</option>
+            <option value="circular">Circular</option>
+            <option value="custom">Custom Shape</option>
+          </select>
+        </div>
+        </div>
+        <button type="button" id="button">BIG OL BUTTON</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li> <a href="https://www.instagram.com/twosweetdiannes/?hl=en"><img src="../img/instagram.svg"
+            alt="link to Instagram page"></a> </li>
+      <li> <a href="https://www.facebook.com/twosweetdiannes"><img src="../img/facebook.svg"
+            alt="link to facebook page"></a> </li>
+      <li> <a href="mailto:twosweetdiannes@gmail.com"><img src="../img/email2.svg" alt="email link"></a></li>
+    </ul>
+  </footer>
+  <script src="../scripts/estimator.js"></script>
+</body>
+
+</html>
