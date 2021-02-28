@@ -71,7 +71,8 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
 
 .row {
   display: flex;
@@ -102,7 +103,7 @@ body {
   .heading-primary--main {
     font-family: "babydarling", cursive;
     display: block;
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: 400;
     animation-name: moveInLeft;
     animation-duration: 4s;
@@ -116,8 +117,8 @@ body {
         font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
-    font-size: 2.7rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 700;
     font-family: "Prata", serif;
     letter-spacing: 0.2rem;
     animation: moveInRight 4.3s ease-out; }
@@ -126,12 +127,12 @@ body {
         letter-spacing: 0.5rem; } }
 
 .header {
-  height: 110vh;
-  background-image: linear-gradient(to right bottom, rgba(46, 235, 225, 0.8), rgba(26, 153, 147, 0.8)), url(/img/cookie-houses.jpg);
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(46, 235, 225, 0.65), rgba(26, 153, 147, 0.65)), url(/img/cookie-houses.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
   .header__logo-box {
     position: absolute;
@@ -142,7 +143,7 @@ body {
     border-radius: 50%; }
   .header__text-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -173,8 +174,6 @@ footer {
 .btn, .btn:link, .btn:visited {
   font-family: "Work Sans", serif;
   text-transform: uppercase;
-  font-weight: 200;
-  letter-spacing: .5rem;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
