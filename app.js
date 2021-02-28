@@ -23,24 +23,30 @@ app.listen(port, () => {
   console.log('Server listening on port ' + port)
 })
 
-// loads the 
+// loads the orders page.
 app.get('/orders', (req, res) => {
-  res.render('contact', { layout: false });
+  // use the rendering engine (in this case handlebars) to show the page.
+  res.render('order', { layout: false });
 });
 
-
+// this route is for passing the information from the form to the backend
 app.post('/send-email', function (req, res) {
   const output = `
+  <style>
+    h3 {
+      font-size: 3rem;
+    }
+  </style>    
   <p> New Order Request!</p>
   <h3> Contact Details </h3>
   <ul>
-    <li>Custom selector: ${req.body.customOrCatalog}</li>
+    <li>Custom or Catalog: ${req.body.customOrCatalog}</li>
     <li>Occasion: ${req.body.occasion}</li>
     <li>Cookie Options: ${req.body.cookieOptions}</li>
     <li>Cookie Details: ${req.body.orderDetails}</li>
   </ul>  
   `
-  function sendEmail(data) {
+  function sendEmail() {
     // async..await is not allowed in global scope, must use a wrapper
     async function main() {
       // Generate test SMTP service account from ethereal.email
@@ -62,9 +68,9 @@ app.post('/send-email', function (req, res) {
       let info = await transporter.sendMail({
         from: '"Escha the Bones" <escha@nomanshigh.com>', // sender address
         to: "danieljhawn@gmail.com, eschatonnow@gmail.com", // list of receivers
-        subject: "Hello ✔", // Subject line
-        text: "Hello world?", // plain text body
-        html: output // html body
+        subject: "Testing", // Subject line
+        text: "", // plain text body, some email clients won't display HTML
+        html: output // html body - this
       });
   
       console.log("Message sent: %s", info.messageId);
@@ -79,7 +85,7 @@ app.post('/send-email', function (req, res) {
   };
 
   sendEmail();
-  res.render('success', {msg:'Email has been sent'});
+  res.render('success', {msg:'Your order request has been sent!'});
   console.log('worked');
   console.log(output);
   
