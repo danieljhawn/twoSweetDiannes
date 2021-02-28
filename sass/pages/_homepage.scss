@@ -52,7 +52,7 @@
 .section-samples {
   background-color: $color-secondary-dark;
   color: $color-white;
-  padding: 45rem 0;
+  padding: 35rem 0rem 20rem 0rem;
   display: flex;
   justify-content: center;
   margin-top: -20vh;
@@ -82,10 +82,11 @@
 // Contact Section
 .section-contact {
   background-color: $color-primary;
+  padding: 5rem 0;
 
   h2 {
     text-align: center;
-    padding-top: 5rem;
+    
     font-size: 3.5rem;
     width: auto;
   }

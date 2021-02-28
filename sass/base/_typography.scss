@@ -12,12 +12,13 @@ body {
 
   /* prevents "shake" from happening with animation */
   backface-visibility: hidden;
+
   margin-bottom: 6rem;
 
   &--main {
     font-family: $font-cursive;
     display: block;
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: 400;
     // letter-spacing: .4rem;
     animation-name: moveInLeft;
@@ -36,8 +37,8 @@ body {
 
   &--sub {
     display: block;
-    font-size: 2.7rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 700;
     font-family: $font-serif;
     letter-spacing: 0.2rem;
     animation: moveInRight 4.3s ease-out;

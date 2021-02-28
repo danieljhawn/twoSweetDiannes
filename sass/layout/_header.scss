@@ -1,16 +1,15 @@
 .header {
-  height: 105vh;
+  height: 95vh; 
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url(/img/cookie-houses.jpg);
+      rgba($color-primary-light, 0.65),
+      rgba($color-primary-dark, 0.65)),
+      url(/img/cookie-houses.jpg);
 
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 
   &__logo-box {
@@ -26,7 +25,7 @@
 
   &__text-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
