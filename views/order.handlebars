@@ -4,12 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
-
   <title>Two Sweet Diannes</title>
-
 </head>
 
 <body>
@@ -40,7 +37,7 @@
             <option value="graduation">Graduation</option>
             <option value="anniversary">Anniversary</option>
             <option value="new years">New Years</option>
-            <option value="v-dayay">Valentine's Day</option>
+            <option value="v-day">Valentine's Day</option>
             <option value="easter">Easter</option>
             <option value="july4th">4th of July</option>
             <option value="thanksgiving">Thanksgiving</option>
@@ -73,39 +70,6 @@
     </ul>
   </footer>
   <script src="../scripts/estimator.js"></script>
-
-  {{!-- <script>
-    const form = document.getElementById('form');
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const customSelector = document.querySelector('input[name="customOrCatalog"]:checked').value;
-      const occasionSelector = document.querySelector('#occasion-select').value;
-      const cookieOptions = document.querySelector('#cookie-options-select').value;
-      const customCookieDetails = document.querySelector('#cust-details').value;
-
-      // console.log(customSelector, occasionSelector, cookieOptions, customCookieDetails);
-
-      const data = {
-        "customSelector": customSelector,
-        "occasionSelector": occasionSelector,
-        "cookieOptions": cookieOptions,
-        "customCookieDetails": customCookieDetails
-      };
-
-      console.log("here is your" + JSON.stringify(data))
-
-      fetch("./send-email", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { 'Content-Type': '"application/x-www-form-urlencoded; charset=UTF-8"' }
-      }).then(res => {
-        console.log(data)
-        console.log("Here's your response:", res);
-      });
-
-    });
-  </script> --}}
 
 </body>
 
