@@ -17,7 +17,7 @@ app.set('view engine', 'handlebars');
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/'));
 
 // initialize the server
 app.listen(port, () => {
@@ -31,7 +31,7 @@ app.get('/orders', (req, res) => {
 });
 
 // main route
-app.get('/', express.static(path.join(__dirname, "public")));
+app.get('/', express.static(path.join(__dirname, "/")));
 
 // for development and debugging
 if (require.main === module) {
