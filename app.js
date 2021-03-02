@@ -6,7 +6,7 @@ const express = require("express");
 const path = require('path');
 const app = express();
 const route = express.Router();
-const port = 5000;
+const port = 5500 || process.env.PORT;
 
 // View engine setup
 app.engine('handlebars', exphbs({
