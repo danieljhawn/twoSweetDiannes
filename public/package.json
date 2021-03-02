@@ -7,7 +7,7 @@
   "scripts": {
     "watch-sass": "node-sass sass/main.scss css/style.css --watch",
     "compile-sass": "node-sass sass/main.scss css/style.css",
-    "start": "nodemon app.js, server.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
