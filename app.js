@@ -1,5 +1,5 @@
 'use strict';
-require('dotenv').config()
+const dotenv = require('dotenv').config()
 const nodemailer = require("nodemailer");
 const exphbs = require('express-handlebars');
 const express = require("express");
