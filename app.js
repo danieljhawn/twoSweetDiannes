@@ -71,10 +71,6 @@ app.post('/send-email', function (req, res) {
           user: process.env.SMTP_LOGIN, // generated ethereal user
           pass: process.env.SMTP_PASSWORD, // generated ethereal password
         },
-        tls: {
-          // do not fail on invalid certs
-          rejectUnauthorized: false
-        }
       });
 
       // send mail with defined transport object
