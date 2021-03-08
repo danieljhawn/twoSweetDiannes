@@ -33,13 +33,6 @@ app.get('/orders', (req, res) => {
 // main route
 app.get('/', express.static(path.join(__dirname, "/")));
 
-// for development and debugging
-if (require.main === module) {
-  require('http').createServer(app).listen(3000, function () {
-    console.info("Listening for HTTP on", this.address());
-  });
-}
-
 // this route is for passing the information from the order form to the backend
 app.post('/send-email', function (req, res) {
   const output = `
