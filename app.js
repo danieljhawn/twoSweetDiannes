@@ -66,7 +66,7 @@ app.post('/send-email', function (req, res) {
       let transporter = nodemailer.createTransport({
         host: process.env.SMTP_SERVER,
         port: 465,
-        secure: true, // true for 465, false for other ports
+        secure: false, // true for 465, false for other ports
         auth: {
           user: process.env.SMTP_LOGIN, // generated ethereal user
           pass: process.env.SMTP_PASSWORD, // generated ethereal password
