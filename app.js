@@ -35,9 +35,9 @@ app.get('/', express.static(path.join(__dirname, "/")));
 
 // for development and debugging
 if (require.main === module) {
-    require('http').createServer(app).listen(3000, function () {
-        console.info("Listening for HTTP on", this.address());
-    });
+  require('http').createServer(app).listen(3000, function () {
+    console.info("Listening for HTTP on", this.address());
+  });
 }
 
 // this route is for passing the information from the order form to the backend
@@ -61,19 +61,22 @@ app.post('/send-email', function (req, res) {
     // async..await is not allowed in global scope, must use a wrapper
     async function main() {
       let testAccount = await nodemailer.createTestAccount();
- 
+
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
         host: process.env.SMTP_SERVER,
         port: 465,
         secure: true, // true for 465, false for other ports
-        secureConnection: false,
         auth: {
           user: process.env.SMTP_LOGIN, // generated ethereal user
           pass: process.env.SMTP_PASSWORD, // generated ethereal password
         },
+        tls: {
+          // do not fail on invalid certs
+          rejectUnauthorized: false
+        }
       });
-  
+
       // send mail with defined transport object
       let info = await transporter.sendMail({
         from: '"Escha the Bones" <escha@nomanshigh.com>', // sender address
@@ -82,17 +85,17 @@ app.post('/send-email', function (req, res) {
         text: "", // plain text body, some email clients won't display HTML
         html: output // html body - this
       });
-        console.log("Message sent: %s", info.messageId);
+      console.log("Message sent: %s", info.messageId);
       console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     }
-  
+
     main().catch(console.error);
   };
 
   sendEmail();
-  res.render('success', {msg:'Your order request has been sent!'});
+  res.render('success', { msg: 'Your order request has been sent!' });
   console.log('worked');
   console.log(output);
-  });
+});
 
-  module.exports = app;
+module.exports = app;
