@@ -65,7 +65,7 @@ app.post('/send-email', function (req, res) {
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
         host: process.env.SMTP_SERVER,
-        port: 465,
+        port: process.env.PORT,
         secure: true, // true for 465, false for other ports
         auth: {
           user: process.env.SMTP_LOGIN, // generated ethereal user
@@ -94,7 +94,7 @@ app.post('/send-email', function (req, res) {
 
   sendEmail();
   res.render('success', { msg: 'Your order request has been sent!' });
-  console.log('worked');
+  
   console.log(output);
 });
 
