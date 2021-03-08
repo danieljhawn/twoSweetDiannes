@@ -33,6 +33,7 @@ app.get('/orders', (req, res) => {
 // main route
 app.get('/', express.static(path.join(__dirname, "/")));
 
+
 // this route is for passing the information from the order form to the backend
 app.post('/send-email', function (req, res) {
   const output = `
@@ -57,7 +58,7 @@ app.post('/send-email', function (req, res) {
 
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
-        host: "smtp.dreamhost.com",
+        host: process.env.SMTP_SERVER,
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
