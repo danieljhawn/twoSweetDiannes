@@ -70,7 +70,7 @@ app.post('/send-email', function (req, res) {
       // send mail with defined transport object
       let info = await transporter.sendMail({
         from: '"Escha the Bones" <escha@nomanshigh.com>', // sender address
-        to: "danieljhawn@gmail.com, eschatonnow@gmail.com", // list of receivers
+        to: "danieljhawn@gmail.com, cooperdpearson@gmail.com", // list of receivers
         subject: "Testing", // Subject line
         text: "", // plain text body, some email clients won't display HTML
         html: output // html body - this
