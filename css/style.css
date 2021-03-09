@@ -71,7 +71,8 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
 
 .row {
   display: flex;
@@ -102,7 +103,7 @@ body {
   .heading-primary--main {
     font-family: "babydarling", cursive;
     display: block;
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: 400;
     animation-name: moveInLeft;
     animation-duration: 4s;
@@ -116,8 +117,8 @@ body {
         font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
-    font-size: 2.7rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 700;
     font-family: "Prata", serif;
     letter-spacing: 0.2rem;
     animation: moveInRight 4.3s ease-out; }
@@ -126,12 +127,12 @@ body {
         letter-spacing: 0.5rem; } }
 
 .header {
-  height: 105vh;
-  background-image: linear-gradient(to right bottom, rgba(46, 235, 225, 0.8), rgba(26, 153, 147, 0.8)), url(/img/cookie-houses.jpg);
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(46, 235, 225, 0.65), rgba(26, 153, 147, 0.65)), url(/img/cookie-houses.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
   .header__logo-box {
     position: absolute;
@@ -142,13 +143,12 @@ body {
     border-radius: 50%; }
   .header__text-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
 
 footer {
-  position: sticky;
   bottom: 0;
   background-color: #457b9d;
   min-height: 20px; }
@@ -174,8 +174,6 @@ footer {
 .btn, .btn:link, .btn:visited {
   font-family: "Work Sans", serif;
   text-transform: uppercase;
-  font-weight: 200;
-  letter-spacing: .5rem;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
@@ -277,7 +275,7 @@ footer {
 .section-samples {
   background-color: #1d3557;
   color: #fff;
-  padding: 45rem 0;
+  padding: 35rem 0rem 20rem 0rem;
   display: flex;
   justify-content: center;
   margin-top: -20vh; }
@@ -293,11 +291,24 @@ footer {
   .section-samples img {
     max-height: 40rem; }
 
+.order {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center; }
+  .order h2 a {
+    text-decoration: none;
+    font-size: 3rem;
+    cursor: pointer; }
+  .order a:hover {
+    color: #00bfb2;
+    transition: .2s ease-in-out; }
+
 .section-contact {
-  background-color: #00bfb2; }
+  background-color: #00bfb2;
+  padding: 5rem 0; }
   .section-contact h2 {
     text-align: center;
-    padding-top: 5rem;
     font-size: 3.5rem;
     width: auto; }
   .section-contact img {
@@ -307,9 +318,7 @@ footer {
     padding: 5rem 0 5rem 0; }
   .section-contact .text-fields {
     display: grid;
-    grid-template-areas: "name email"
- "subject phone"
- "message message";
+    grid-template-areas: "name email" "subject phone" "message message";
     grid-gap: 2rem; }
     .section-contact .text-fields .name-input {
       grid-area: name; }
@@ -324,14 +333,15 @@ footer {
       height: 35rem; }
     .section-contact .text-fields .text-input {
       padding: 0.5rem 1rem; }
-    .section-contact .text-fields input, .section-contact .text-fields textarea {
-      border-radius: .6rem;
+    .section-contact .text-fields input,
+    .section-contact .text-fields textarea {
+      border-radius: 0.6rem;
       font-family: "Work Sans", serif; }
   .section-contact button[type="submit"] {
     width: 100%;
     height: 4rem;
     font-family: "Work Sans", serif;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
     margin-top: 1.2rem; }
 
 .header2 {
@@ -372,7 +382,3 @@ footer {
         min-height: 15px; }
         .payment ul li a:hover {
           color: #fff; }
-
-.payment {
-  display: flex;
-  flex-direction: row; }

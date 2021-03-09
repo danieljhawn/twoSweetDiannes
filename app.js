@@ -6,7 +6,7 @@ const express = require("express");
 const path = require('path');
 const app = express();
 const route = express.Router();
-const port = process.env.PORT || 465;
+const port = process.env.PORT || 5000;
 
 // View engine setup
 app.engine('handlebars', exphbs({
@@ -70,7 +70,7 @@ app.post('/send-email', function (req, res) {
       // send mail with defined transport object
       let info = await transporter.sendMail({
         from: '"Escha the Bones" <escha@nomanshigh.com>', // sender address
-        to: "danieljhawn@gmail.com, cooperdpearson@gmail.com", // list of receivers
+        to: "danieljhawn@gmail.com", // list of receivers
         subject: "Testing", // Subject line
         text: "", // plain text body, some email clients won't display HTML
         html: output // html body - this
