@@ -88,9 +88,9 @@
     font-size: 3rem;
     cursor: pointer;
   }
+  
   a:hover {
     color: $color-primary;
-    text-shadow: 2px 2px 3px $color-tertiary;
     transition: .2s ease-in-out;
   }
 }

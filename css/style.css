@@ -302,7 +302,6 @@ footer {
     cursor: pointer; }
   .order a:hover {
     color: #00bfb2;
-    text-shadow: 2px 2px 3px antiquewhite;
     transition: .2s ease-in-out; }
 
 .section-contact {
