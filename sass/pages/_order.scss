@@ -1,3 +1,14 @@
+input, textarea, select {
+  border-radius: .6rem;
+  margin: .5rem;
+  padding: .8rem;
+  font-family: $font-sans-serif;
+}
+
+form {
+  
+}
+
 .header2 {
   display: flex;
   justify-content: center;
@@ -13,14 +24,9 @@
   background-position: top;
   position: relative;
 
-  &__logo-box-center {
-    position: relative;
-    top: 4rem;
-  }
-  
 }
 
-.payment {
+.order {
   text-decoration: none;
   color: white;
   position: absolute;
@@ -55,4 +61,8 @@
       }
     }
   }
+}
+
+.cookie-options {
+  width: 60%;
 }

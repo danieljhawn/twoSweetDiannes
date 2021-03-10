@@ -5,8 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./fonts/fonts.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Two Sweet Diannes</title>
 </head>
 
@@ -21,14 +21,14 @@
     <section class="order">
       <form id="form" action="/send-email" method="POST">
         <h1>What kind of cookies would you like?</h1>
-        {{msg}}
+  
         <div>
           <input type="radio" id="catalog" name="customOrCatalog" value="catalog" class="radio-selectors">
           <label for="catalog">I want to pick something from the catalog</label>
           <br>
           <input type="radio" id="custom" name="customOrCatalog" value="custom" class="radio-selectors">
           <label for="custom">I want a custom order</label>
-        </div><br>
+        </div>
         <div class="occasion" style="display: none;">
           <label for="occasion">What's the occasion?</label><br>
           <select name="occasion" id="occasion-select">
@@ -52,6 +52,7 @@
           <select name="cookieOptions" id="cookie-options-select">
             <option value="">--Please choose an option--</option>
             <option value="circular">Circular</option>
+            <option value="circular">Square</option>
             <option value="custom shape">Custom Shape</option>
           </select><br>
           <textarea name="orderDetails" id="order-details" cols="30" rows="10"></textarea>
