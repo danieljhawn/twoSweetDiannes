@@ -89,7 +89,7 @@ body {
   margin: auto; }
 
 body {
-  font-family: "Prata", serif;
+  font-family: "'Open Sans Condensed", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
@@ -101,7 +101,7 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
-    font-family: "babydarling", cursive;
+    font-family: "Euphoria Script", cursive;
     display: block;
     font-size: 7rem;
     font-weight: 400;
@@ -119,7 +119,7 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    font-family: "Prata", serif;
+    font-family: "'Open Sans Condensed", sans-serif;
     letter-spacing: 0.2rem;
     animation: moveInRight 4.3s ease-out; }
     @media (max-width: 37.5em) {
@@ -171,7 +171,7 @@ footer {
 
 /* Button styling */
 .btn, .btn:link, .btn:visited {
-  font-family: "Work Sans", serif;
+  font-family: "'Open Sans Condensed", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -329,13 +329,13 @@ footer {
       padding: 1.2remgit; }
     .section-contact .text-fields input, .section-contact .text-fields textarea {
       border-radius: .6rem;
-      font-family: "Work Sans", serif; }
+      font-family: "'Open Sans Condensed", sans-serif; }
 
 input, textarea, select {
   border-radius: .6rem;
   margin: .5rem;
   padding: .8rem;
-  font-family: "Work Sans", serif; }
+  font-family: "'Open Sans Condensed", sans-serif; }
 
 .header2 {
   display: flex;
@@ -356,7 +356,7 @@ input, textarea, select {
   background-color: #1d3557;
   padding: 3rem;
   font-size: 2rem;
-  font-family: "Work Sans", serif;
+  font-family: "'Open Sans Condensed", sans-serif;
   border-radius: 2rem; }
   .order ul {
     list-style: none;

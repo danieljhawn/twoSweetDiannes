@@ -1,5 +1,5 @@
 body {
-  font-family: $font-serif;
+  font-family: $font-sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
@@ -39,7 +39,7 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    font-family: $font-serif;
+    font-family: $font-sans-serif;
     letter-spacing: 0.2rem;
     animation: moveInRight 4.3s ease-out;
 
