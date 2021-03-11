@@ -72,7 +72,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 3rem;
+  background-color: #e0f7f8; }
 
 .row {
   display: flex;
@@ -307,7 +308,7 @@ footer {
     cursor: pointer; }
   .order a:hover {
     color: #00bfb2;
-    transition: .2s ease-in-out; }
+    transition: 0.2s ease-in-out; }
 
 .section-contact {
   background-color: #00bfb2;
@@ -322,26 +323,29 @@ footer {
   .section-contact form {
     width: 100%;
     padding: 5rem 0 5rem 0; }
-  .section-contact .text-fields {
+  .section-contact .order-details {
     display: grid;
-    grid-template-areas: "name email" "subject phone" "message message";
+    grid-template-areas: "name email date" "quantity theme shipping" "message message message" "submit submit submit";
     grid-gap: 1rem; }
-    .section-contact .text-fields .name-input {
+    .section-contact .order-details .name-input {
       grid-area: name; }
-    .section-contact .text-fields .subject-input {
-      grid-area: subject; }
-    .section-contact .text-fields .email-input {
+    .section-contact .order-details .email-input {
       grid-area: email; }
-    .section-contact .text-fields .phone-input {
-      grid-area: phone; }
-    .section-contact .text-fields .message-input {
+    .section-contact .order-details .date-input {
+      grid-area: date; }
+    .section-contact .order-details .quantity-input {
+      grid-area: quantity; }
+    .section-contact .order-details .theme-input {
+      grid-area: theme; }
+    .section-contact .order-details .message-input {
       grid-area: message;
-      height: 35rem; }
-    .section-contact .text-fields .text-input {
-      margin: 0.5rem;
-      padding: 1.2remgit; }
-    .section-contact .text-fields input,
-    .section-contact .text-fields textarea {
+      height: 20rem; }
+    .section-contact .order-details .submit-input {
+      grid-area: submit; }
+    .section-contact .order-details .shipping-radios {
+      grid-area: shipping; }
+    .section-contact .order-details input,
+    .section-contact .order-details textarea {
       border-radius: 0.6rem;
       font-family: "'Open Sans Condensed", sans-serif; }
   .section-contact button[type="submit"] {

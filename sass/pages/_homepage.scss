@@ -60,11 +60,10 @@
 
   h2 {
     font-size: 4rem;
-    
+
     a {
       text-decoration: none;
       color: $color-primary;
-      
     }
   }
 
@@ -99,10 +98,10 @@
     font-size: 3rem;
     cursor: pointer;
   }
-  
+
   a:hover {
     color: $color-primary;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 }
 
@@ -127,36 +126,48 @@
     width: 100%;
     padding: 5rem 0 5rem 0;
   }
-  
-  .text-fields {
+
+  .order-details {
     display: grid;
     grid-template-areas:
-      "name email"
-      "subject phone"
-      "message message";
+      "name email date"
+      "quantity theme shipping"
+      "message message message"
+      "submit submit submit";
     grid-gap: 1rem;
-    // margin-bottom: 2rem;
 
     //Grid Areas
     .name-input {
       grid-area: name;
     }
-    .subject-input {
-      grid-area: subject;
-    }
+    
     .email-input {
       grid-area: email;
     }
-    .phone-input {
-      grid-area: phone;
+    
+    .date-input {
+      grid-area: date;
     }
+
+    .quantity-input {
+      grid-area: quantity;
+    }
+
+    .theme-input {
+      grid-area: theme;
+    }
+    
     .message-input {
       grid-area: message;
-      height: 35rem;
+      height: 20rem;
     }
-    .text-input {
-      margin: 0.5rem;
-      padding: 1.2remgit ;
+
+    .submit-input {
+      grid-area: submit;
+    }
+
+    .shipping-radios {
+      grid-area: shipping;
     }
 
     input,

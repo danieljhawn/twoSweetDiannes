@@ -24,14 +24,11 @@ app.listen(port, () => {
   console.log('Server listening on port ' + port)
 })
 
-// loads the orders page.
-app.get('/orders', (req, res) => {
+// loads the main page.
+app.get('/', (req, res) => {
   // use the rendering engine (in this case handlebars) to show the page.
-  res.render('order', { layout: false });
+  res.render('index', { layout: false });
 });
-
-// main route
-app.get('/', express.static(path.join(__dirname, "/")));
 
 
 // this route is for passing the information from the order form to the backend
