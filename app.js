@@ -38,8 +38,11 @@ app.get('/', express.static(path.join(__dirname, "/")));
 app.post('/send-email', function (req, res) {
   const output = `
   <style>
+    body {
+      background-color: rgb(26, 153, 147);
+    }
     h3 {
-      font-size: 3rem;
+      font-size: 10rem;
     }
   </style>    
   <p> New Order Request!</p>
