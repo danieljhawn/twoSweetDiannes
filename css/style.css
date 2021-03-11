@@ -93,10 +93,10 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: antiquewhite; }
+  color: #c9f3f6; }
 
 .heading-primary {
-  color: antiquewhite;
+  color: #c9f3f6;
   /* prevents "shake" from happening with animation */
   backface-visibility: hidden;
   margin-bottom: 6rem; }
@@ -153,7 +153,7 @@ footer {
   background-color: #457b9d;
   min-height: 20px; }
   footer a {
-    color: antiquewhite;
+    color: #c9f3f6;
     text-decoration: none;
     font-size: 3rem;
     display: inline-block; }
