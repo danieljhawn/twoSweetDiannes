@@ -118,7 +118,7 @@
       "name email"
       "subject phone"
       "message message";
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     // margin-bottom: 2rem;
 
     //Grid Areas
@@ -138,9 +138,9 @@
       grid-area: message;
       height: 35rem;
     }
-
     .text-input {
-      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      padding: 1.2remgit ;
     }
 
     input, textarea {

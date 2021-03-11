@@ -93,10 +93,10 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #c9f3f6; }
+  color: #fff; }
 
 .heading-primary {
-  color: #c9f3f6;
+  color: #fff;
   /* prevents "shake" from happening with animation */
   backface-visibility: hidden;
   margin-bottom: 6rem; }
@@ -153,7 +153,6 @@ footer {
   background-color: #457b9d;
   min-height: 20px; }
   footer a {
-    color: #c9f3f6;
     text-decoration: none;
     font-size: 3rem;
     display: inline-block; }
@@ -313,7 +312,7 @@ footer {
   .section-contact .text-fields {
     display: grid;
     grid-template-areas: "name email" "subject phone" "message message";
-    grid-gap: 2rem; }
+    grid-gap: 1rem; }
     .section-contact .text-fields .name-input {
       grid-area: name; }
     .section-contact .text-fields .subject-input {
@@ -326,7 +325,8 @@ footer {
       grid-area: message;
       height: 35rem; }
     .section-contact .text-fields .text-input {
-      padding: 0.5rem 1rem; }
+      margin: 0.5rem;
+      padding: 1.2remgit; }
     .section-contact .text-fields input, .section-contact .text-fields textarea {
       border-radius: .6rem;
       font-family: "Work Sans", serif; }
