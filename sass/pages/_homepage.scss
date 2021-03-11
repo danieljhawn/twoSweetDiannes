@@ -56,6 +56,17 @@
   display: flex;
   justify-content: center;
   margin-top: -20vh;
+  text-align: center;
+
+  h2 {
+    font-size: 4rem;
+    
+    a {
+      text-decoration: none;
+      color: $color-primary;
+      
+    }
+  }
 
   // this is the div containing the sample pics
   ul {
@@ -113,17 +124,17 @@
   }
 
   form {
-    // width: 100%;
+    width: 100%;
     padding: 5rem 0 5rem 0;
   }
-
+  
   .text-fields {
     display: grid;
     grid-template-areas:
       "name email"
       "subject phone"
       "message message";
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     // margin-bottom: 2rem;
 
     //Grid Areas
@@ -143,9 +154,9 @@
       grid-area: message;
       height: 35rem;
     }
-
     .text-input {
-      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      padding: 1.2remgit ;
     }
 
     input,
