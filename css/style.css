@@ -324,9 +324,7 @@ footer {
     padding: 5rem 0 5rem 0; }
   .section-contact .text-fields {
     display: grid;
-    grid-template-areas: "name email"
- "subject phone"
- "message message";
+    grid-template-areas: "name email" "subject phone" "message message";
     grid-gap: 1rem; }
     .section-contact .text-fields .name-input {
       grid-area: name; }
@@ -342,9 +340,16 @@ footer {
     .section-contact .text-fields .text-input {
       margin: 0.5rem;
       padding: 1.2remgit; }
-    .section-contact .text-fields input, .section-contact .text-fields textarea {
-      border-radius: .6rem;
+    .section-contact .text-fields input,
+    .section-contact .text-fields textarea {
+      border-radius: 0.6rem;
       font-family: "'Open Sans Condensed", sans-serif; }
+  .section-contact button[type="submit"] {
+    width: 100%;
+    height: 4rem;
+    font-family: "'Open Sans Condensed", sans-serif;
+    border-radius: 0.6rem;
+    margin-top: 1.2rem; }
 
 input, textarea, select {
   border-radius: .6rem;
@@ -387,6 +392,6 @@ input, textarea, select {
         min-height: 15px; }
         .order ul li a:hover {
           color: #fff; }
+
 .cookie-options {
   width: 60%; }
-
