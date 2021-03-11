@@ -296,6 +296,19 @@ footer {
   .section-samples img {
     max-height: 40rem; }
 
+.order {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center; }
+  .order h2 a {
+    text-decoration: none;
+    font-size: 3rem;
+    cursor: pointer; }
+  .order a:hover {
+    color: #00bfb2;
+    transition: .2s ease-in-out; }
+
 .section-contact {
   background-color: #00bfb2;
   padding: 5rem 0; }
@@ -311,7 +324,9 @@ footer {
     padding: 5rem 0 5rem 0; }
   .section-contact .text-fields {
     display: grid;
-    grid-template-areas: "name email" "subject phone" "message message";
+    grid-template-areas: "name email"
+ "subject phone"
+ "message message";
     grid-gap: 1rem; }
     .section-contact .text-fields .name-input {
       grid-area: name; }
@@ -372,6 +387,6 @@ input, textarea, select {
         min-height: 15px; }
         .order ul li a:hover {
           color: #fff; }
-
 .cookie-options {
   width: 60%; }
+
