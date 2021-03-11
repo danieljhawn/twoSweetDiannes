@@ -343,7 +343,8 @@ footer {
     .section-contact .order-details .submit-input {
       grid-area: submit; }
     .section-contact .order-details .shipping-radios {
-      grid-area: shipping; }
+      grid-area: shipping;
+      font-size: 1.5rem; }
     .section-contact .order-details input,
     .section-contact .order-details textarea {
       border-radius: 0.6rem;

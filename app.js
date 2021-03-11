@@ -45,10 +45,13 @@ app.post('/send-email', function (req, res) {
   <p> New Order Request!</p>
   <h3> Contact Details </h3>
   <ul>
-    <li>Custom or Catalog: ${req.body.customOrCatalog}</li>
-    <li>Occasion: ${req.body.occasion}</li>
-    <li>Cookie Options: ${req.body.cookieOptions}</li>
-    <li>Cookie Details: ${req.body.orderDetails}</li>
+    <li>Name: ${req.body.name}</li>
+    <li>Email: ${req.body.email}</li>
+    <li>Date: ${req.body.date}</li>
+    <li>Quantity Requested: ${req.body.quantity}</li>
+    <li>Theme/Event: ${req.body.theme}</li>
+    <li>Shipping: ${req.body.shipOrNo}</li>
+    <li>Notes: ${req.body.message}</li>
   </ul>  
   `
   function sendEmail() {
